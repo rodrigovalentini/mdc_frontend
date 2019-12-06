@@ -10,6 +10,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RouterModule } from '@angular/router';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    MatCardModule
   ],
   exports: [
     CommonModule,
@@ -38,7 +40,8 @@ import { RouterModule } from '@angular/router';
     MatIconModule,
     MatListModule,
     NavBarComponent,
-    RouterModule
+    RouterModule,
+    MatCardModule
   ],
   providers: [],
 })
