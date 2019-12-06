@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  z-index: 10;
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+
+/* Material Elements*/
+
+/*  .mat-nav-list {
+  background: linear-gradient(to right, rgb(223, 223, 223), rgb(209, 214, 214), rgb(215, 216, 216)); 
+} */
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+  color: rgb(110, 110, 110)!important;
+}
+
+.mat-toolbar {
+  position: relative;
+  background: linear-gradient(to right, rgb(0, 67, 145), rgb(47, 57, 204), rgb(27, 154, 212));
+  color: #fff;
+  box-shadow: 3px 0 6px rgba(0, 0, 0.24);
+  z-index: 1;
+}
+
+.mat-toolbar a {
+  margin: 30px;
+  display: inline-flex;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  text-shadow: 1px 0 6px rgba(0, 0, 0.24);
+}
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option {
+  color: white;
+}
+
+.mat-card {
+  -webkit-backdrop-filter: blur(10px)!important;
+  /* Safari 9+ */
+  backdrop-filter: blur(10px)!important;
+  /* Chrome and Opera */
+  background-color: rgba(255, 255, 255, 0.3)!important;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15), 0 3px 12px 0 rgba(0, 0, 0, 0.15)!important;
+}
+
+/* End of Material Elements*/
+
+
+.container .fadeIn {
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+  -moz-animation: fadeIn 0.3s ease-in-out;
+  -o-animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+  -moz-animation: fadeIn 0.3s ease-in-out;
+  -o-animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
