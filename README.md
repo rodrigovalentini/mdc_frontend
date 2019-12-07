@@ -1,3 +1,6 @@
+# Atenção!
+Use npm install após clonar o diretório e assim chame o ng s
+
 # MdcFrontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
