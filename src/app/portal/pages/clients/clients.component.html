@@ -13,9 +13,18 @@
                     alt="Responsive image"
                   />
                 </div>
-                <div class="col-lg-4">
-                    <p class="title-name">{{ u.firstName }} {{ u.lastName }}</p>
-                    Estou muito satisfeito!!!
+                <div class="col-lg-8">
+                  <p class="title-name">{{ u.firstName }} {{ u.lastName }}</p>
+                  Estou muito satisfeito!!!
+                  <star-rating
+                    value="5"
+                    totalstars="5"
+                    checkedcolor="red"
+                    uncheckedcolor="black"
+                    size="24px"
+                    readonly="false"
+                    (rate)="onRate($event)"
+                  ></star-rating>
                 </div>
               </div>
             </div>
