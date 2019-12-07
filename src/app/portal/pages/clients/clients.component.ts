@@ -23,7 +23,6 @@ export class ClientsComponent implements OnInit {
         if (users) {
           this.users = users.data;
           this.loading = false;
-          console.log(this.users);
         }
       });
   }

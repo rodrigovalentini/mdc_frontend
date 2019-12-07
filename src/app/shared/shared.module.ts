@@ -11,10 +11,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
+import { RatingModule } from 'ng-starrating';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { LoadingComponent } from './loading/loading.component';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 @NgModule({
   declarations: [
-    NavBarComponent
+    NavBarComponent,
+    LoadingComponent,
   ],
   imports: [
     CommonModule,
@@ -27,7 +32,10 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatListModule,
     RouterModule,
-    MatCardModule
+    MatCardModule,
+    RatingModule,
+    MatProgressSpinnerModule,
+    OverlayModule
   ],
   exports: [
     CommonModule,
@@ -41,9 +49,16 @@ import { MatCardModule } from '@angular/material/card';
     MatListModule,
     NavBarComponent,
     RouterModule,
-    MatCardModule
+    MatCardModule,
+    RatingModule,
+    MatProgressSpinnerModule,
+    LoadingComponent,
+    OverlayModule
   ],
   providers: [],
+  entryComponents: [
+    LoadingComponent
+  ]
 })
 export class SharedModule {
   public static forRoot(): ModuleWithProviders {
