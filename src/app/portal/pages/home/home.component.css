@@ -2,3 +2,15 @@
   background-image: url('/../assets/images/slide1.jpg');
   height: 90vh;
 }
+
+.first-title {
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  font-size: 111px;
+}
+
+.second-title {
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  font-size: 90px;
+}
