@@ -1,3 +1,9 @@
 .img-format {
   border-radius: 60px;
 }
+
+.title-name {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  color: rgba(12, 59, 214, 0.561);
+}
