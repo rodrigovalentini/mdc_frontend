@@ -10,10 +10,10 @@ export class PortalService {
 
   constructor(private http: HttpClient) { }
 
-  getUsers(): Observable<[any]> {
+  getUsers(): Observable<any> {
     const apiUrl = 'https://n161.tech/api/dummyapi/user';
     return this.http.get(apiUrl)
-      .pipe(map((response: [any]) => response),
+      .pipe(map((response: any) => response),
         catchError(err => {
           return throwError(err);
         }));

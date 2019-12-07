@@ -21,7 +21,7 @@ export class ClientsComponent implements OnInit {
     this.portalService.getUsers()
       .subscribe(users => {
         if (users) {
-          this.users = users;
+          this.users = users.data;
           this.loading = false;
           console.log(this.users);
         }
